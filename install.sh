@@ -1,12 +1,12 @@
 #!/bin/bash
 
 echo "##################################################################"
-echo "1. INSTALLING NEOVIM"
-echo "##################################################################"
+echo "INSTALLING NEOVIM"
+echo "#################################################################"
 #sudo pacman -S neovim
 
 echo "##################################################################"
-echo "2. CREATE SSH KEY FOR GITHUB"
+echo "CREATE SSH KEY FOR GITHUB"
 echo "##################################################################"
 
 #ssh-keygen -t ed25519 -C "viktor.diezel@posteo.de"
@@ -19,32 +19,46 @@ echo "Please add the SSH key to GitHub to proceed:"
 #read -p "Press any key once you are done!"
 
 echo "##################################################################"
-echo "3. SET .GITCONFIG"
+echo "SET .GITCONFIG"
 echo "##################################################################"
 
 #git clone git@github.com:vdiezel/dot-files.git ~/dot-files
 #cp ~/dot-files/.gitconfig ~/.gitconfig
 
 echo "##################################################################"
-echo "4. SET NVIM configuration"
+echo "SET NVIM configuration"
 echo "##################################################################"
 
 #git clone git@github.com:vdiezel/neovim.git ~/.config/nvim
 
 echo "##################################################################"
-echo "5. INSTALL AG"
+echo "INSTALL AG"
 echo "##################################################################"
 
 #sudo pacman -S the_silver_searcher
 
 echo "##################################################################"
-echo "5. INSTALL KITTY"
+echo "INSTALL FZF (additionally as the binary in bin is somehow not recognized)"
 echo "##################################################################"
 
-sudo pacman -S kitty
-mkdir -p ~/.config/kitty
-cp /usr/share/doc/kitty/kitty.conf ~/.config/kitty/kitty.conf
-cp ~/dot-files/kitty/theme.conf ~/.config/kitty/theme.conf
+#git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+#~/.fzf/install
 
-echo "include ./theme.conf" >> ~/.config/kitty/kitty.conf
+echo "##################################################################"
+echo "INSTALL KITTY"
+echo "##################################################################"
 
+#sudo pacman -S kitty
+#mkdir -p ~/.config/kitty
+#cp ~/dot-files/kitty/theme.conf ~/.config/kitty/theme.conf
+#cp ~/dot-files/kitty/kitty.conf ~/.config/kitty/kitty.conf
+
+echo "##################################################################"
+echo "INSTALL FONTS"
+echo "##################################################################"
+
+#mkdir -p ~/.local/share/fonts
+#cp ~/dot-files/fonts/* ~/.local/share/fonts/
+#fc-cache
+
+# Missing: awesome configurations (to be tweaked)
