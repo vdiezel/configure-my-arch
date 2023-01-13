@@ -61,4 +61,35 @@ echo "##################################################################"
 #cp ~/dot-files/fonts/* ~/.local/share/fonts/
 #fc-cache
 
+echo "##################################################################"
+echo "INSTALL NVM"
+echo "##################################################################"
+
+#echo "Do you want to install nvm? (type 'y' for 'Yes' | Hit 'Enter' for 'No')"
+#read install_nvm
+#
+#if [ $install_nvm = "y" ]; then
+#  git clone https://github.com/nvm-sh/nvm.git ~/.nvm
+#  cd ~/.nvm
+#  git checkout v0.39.3
+#  echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.bashrc
+#  echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> ~/.bashrc
+#  echo '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"' >> ~/.bashrc
+#else
+#  echo "Skipping nvm installation"
+#fi
+
+echo "##################################################################"
+echo "INSTALL SLACK"
+echo "##################################################################"
+
+echo "Do you want to install slack? (type 'y' for 'Yes' | Hit 'Enter' for 'No')"
+read install_slack
+
+if [ $install_slack = "y" ]; then
+  yay -S slack-desktop
+else
+  echo "Skipping nvm installation"
+fi
+
 # Missing: awesome configurations (to be tweaked)
