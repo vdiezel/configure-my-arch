@@ -16,6 +16,8 @@ echo "##################################################################"
 #sudo pacman -S keychain
 #echo "eval `keychain --agents ssh --eval --noask -q id_ed25519`" >> ~./bashrc
 
+#echo "AddKeysToAgent yes" > ~/.ssh/config
+
 echo "Please add the SSH key to GitHub to proceed:"
 #cat ~/.ssh/id_ed25519.pub
 
@@ -71,6 +73,11 @@ echo "##################################################################"
 #sudo systemctl start bluetooth
 
 #sudo pacman -S blueman pulseaudio-bluetooth
+
+echo "##################################################################"
+echo "Install pcmanfm
+echo "##################################################################"
+#sudo pacman -S pcmanfm
 
 echo "##################################################################"
 echo "INSTALL NVM"
