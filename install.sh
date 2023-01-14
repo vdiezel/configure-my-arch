@@ -107,13 +107,17 @@ echo "##################################################################"
 echo "INSTALL SLACK"
 echo "##################################################################"
 
-echo "Do you want to install slack? (type 'y' for 'Yes' | Hit 'Enter' for 'No')"
-read install_slack
+#echo "Do you want to install slack? (type 'y' for 'Yes' | Hit 'Enter' for 'No')"
+#read install_slack
+#
+#if [ $install_slack = "y" ]; then
+#  yay -S slack-desktop
+#else
+#  echo "Skipping nvm installation"
+#fi
 
-if [ $install_slack = "y" ]; then
-  yay -S slack-desktop
-else
-  echo "Skipping nvm installation"
-fi
-
-# Missing: awesome configurations (to be tweaked)
+echo "##################################################################"
+echo "INSTALL AWESOME"
+echo "##################################################################"
+# sudo pacman -S awesome
+# git clone git@github.com:vdiezel/awesomewm.git ~/.config/awesome
