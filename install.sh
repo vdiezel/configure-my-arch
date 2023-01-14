@@ -65,6 +65,14 @@ echo "##################################################################"
 #fc-cache
 
 echo "##################################################################"
+echo "Settign up Bluetooth for audio"
+echo "##################################################################"
+#sudo systemctl start bluetooth
+#sudo systemctl start bluetooth
+
+#sudo pacman -S blueman pulseaudio-bluetooth
+
+echo "##################################################################"
 echo "INSTALL NVM"
 echo "##################################################################"
 
