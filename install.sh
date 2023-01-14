@@ -58,6 +58,12 @@ echo "##################################################################"
 #cp ~/dot-files/kitty/theme.conf ~/.config/kitty/theme.conf
 #cp ~/dot-files/kitty/kitty.conf ~/.config/kitty/kitty.conf
 
+## overwrite the bash prompt (put this into the .bashrc)
+#parse_git_branch() {
+# git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+#}
+# PS1='\[\033[01;34m\]\w \[\033[01;92m\]$(parse_git_branch)\[\033[00m\] '
+
 echo "##################################################################"
 echo "INSTALL FONTS"
 echo "##################################################################"
