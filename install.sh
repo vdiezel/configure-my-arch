@@ -13,6 +13,9 @@ echo "##################################################################"
 #eval "$(ssh-agent -s)"
 #ssh-add ~/.ssh/id_ed25519
 
+#sudo pacman -S keychain
+#echo "eval `keychain --agents ssh --eval --noask -q id_ed25519`" >> ~./bashrc
+
 echo "Please add the SSH key to GitHub to proceed:"
 #cat ~/.ssh/id_ed25519.pub
 
