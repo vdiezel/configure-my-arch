@@ -127,3 +127,15 @@ echo "INSTALL LIBRE_OFFICE"
 echo "##################################################################"
 sudo pacman -S libreoffice-still
 
+echo "##################################################################"
+echo "INSTALL GRUVBOX GTK THEME"
+echo "##################################################################"
+git clone https://aur.archlinux.org/gruvbox-material-theme-git.git
+cd gruvbox-material-theme-git
+makepkg -si
+
+echo 'gtk-icon-theme-name = "Gruvbox-Material-Dark"' > ~/.gtkrc-2.0
+echo 'gtk-theme-name = "Gruvbox-Material-Dark"' >> ~/.gtkrc-2.0
+
+
+
