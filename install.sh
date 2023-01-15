@@ -81,7 +81,7 @@ echo "##################################################################"
 #sudo pacman -S blueman pulseaudio-bluetooth
 
 echo "##################################################################"
-echo "Install pcmanfm
+echo "Install pcmanfm"
 echo "##################################################################"
 #sudo pacman -S pcmanfm
 
@@ -121,3 +121,9 @@ echo "INSTALL AWESOME"
 echo "##################################################################"
 # sudo pacman -S awesome
 # git clone git@github.com:vdiezel/awesomewm.git ~/.config/awesome
+
+echo "##################################################################"
+echo "INSTALL LIBRE_OFFICE"
+echo "##################################################################"
+sudo pacman -S libreoffice-still
+
